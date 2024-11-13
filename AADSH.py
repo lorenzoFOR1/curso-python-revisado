@@ -1,7 +1,7 @@
 #dicionario para: As Aventuras De Sherlock Holmes
 
 def dicionario():
-    Dicionario = ()
+    Dicionario = {}
     SzLimit = 4
     caracteresRemovidos = '",.!?: -;()'
     while True:
@@ -9,13 +9,13 @@ def dicionario():
             Linha = input().split()
             if Linha != "":
                 for i in range (len(Linha)):
-                    Palavra = Linha[i].strip()
+                    Palavra = Linha[i].strip(caracteresRemovidos)
                     if (Palavra)>=4:
                         k = Dicionario.get(Linha[i])
                         if k == None:
-                            Dicionario(Linha[i])=0
+                            Dicionario[Linha[i]]=0
                         else:
-                            Dicionario(Linha[i])+=1
+                            Dicionario[Linha[i]]+=1
         except EOFError as Er:
             break
     for chave, valor in Dicionario.items():
