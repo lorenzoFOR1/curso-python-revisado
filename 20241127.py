@@ -1,8 +1,11 @@
 #coding:utf-8
+import os, shutil
 
-#conteudo:  
+#conteudo: equivalencias de atalho do terminal em python
+
 def cd1():
-    print("codigo")
+    print(os.getcwd())
+    print(os.listdir())
 
 
 
