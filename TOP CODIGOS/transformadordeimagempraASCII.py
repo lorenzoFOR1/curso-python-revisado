@@ -53,7 +53,7 @@ def save_ascii_to_file(ascii_str, filename="ascii_art.txt"):
 
 if __name__ == "__main__":
     # Caminho da imagem
-    image_path = "roblox-face-meme-5.jpg"  # Substitua pelo caminho da sua imagem
+    image_path = "IMAGEMEXEMPLO.jpg"  # Substitua pelo caminho da sua imagem
 
     # Gerar a arte ASCII
     ascii_art = image_to_ascii(image_path)
